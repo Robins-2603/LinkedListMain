@@ -8,11 +8,11 @@ public class Node {
         this.data=0;
         this.next=null;
     }
-    @Override
-    public String toString() {
-        return "Node{" +
-                "data=" + data +
-                ", next=" + next +
-                '}';
-    }
+//    @Override
+//    public String toString() {
+//        return "Node{" +
+//                "data=" + data +
+//                ", next=" + next +
+//                '}';
+//    }
 }

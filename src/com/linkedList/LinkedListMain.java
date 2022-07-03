@@ -5,11 +5,17 @@ import java.util.Scanner;
 public class LinkedListMain {
     public static void main(String[] args) {
         System.out.println("-------welcome to linkedList---------");
-        LinkedList l1 = new LinkedList();
-        l1.addDataAtFirst(70);
-        l1.addDataAtFirst(30);
-        l1.addDataAtFirst(56);
-        l1.print();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("1.To add Data at start");
+        System.out.println("2.To add Data at End");
+        switch (sc.nextInt()){
 
+            case 1:
+                Operations.addDataAtStart();
+                break;
+            case 2:
+                Operations.addDataAtEnd();
+                break;
+        }
     }
 }
