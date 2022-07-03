@@ -1,23 +1,15 @@
 package com.linkedList;
 
+import java.util.Scanner;
+
 public class LinkedListMain {
     public static void main(String[] args) {
         System.out.println("-------welcome to linkedList---------");
-// creating Node object
-        Node firstNode = new Node(56);
-        Node secondNode = new Node(30);
-        Node thirdNode = new Node(70);
-// initializing head
-        Node head = firstNode;
-        firstNode.next = secondNode;
-        secondNode.next = thirdNode;
-// traversing to check
-        Node temp = head;
-        while (temp!=null) {
-            System.out.println( temp.data);
-            temp = temp.next;
-        }
+        LinkedList l1 = new LinkedList();
+        l1.addDataAtFirst(70);
+        l1.addDataAtFirst(30);
+        l1.addDataAtFirst(56);
+        l1.print();
+
     }
-
-
 }

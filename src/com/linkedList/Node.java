@@ -5,7 +5,14 @@ public class Node {
     Node next;
 
     public Node(int data) {
-        this.data = data;
-        this.next = null;
+        this.data=0;
+        this.next=null;
+    }
+    @Override
+    public String toString() {
+        return "Node{" +
+                "data=" + data +
+                ", next=" + next +
+                '}';
     }
 }
