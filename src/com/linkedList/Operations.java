@@ -42,6 +42,7 @@ public class Operations {
         System.out.println("After");
         linkedList.print();
         System.out.println(" ");
+        linkedList.size();
     }
 
     //method to delete last element
@@ -57,6 +58,7 @@ public class Operations {
         System.out.println("After");
         linkedList.print();
         System.out.println(" ");
+        linkedList.size();
 
     }
 
@@ -70,5 +72,22 @@ public class Operations {
         linkedList.print();
         linkedList.search(30);
         System.out.println(" ");
+        linkedList.size();
+    }
+// insert at specific pos
+    public static void insertAtSpecificIndex() {
+        LinkedList linkedList = new LinkedList();
+        Node firstNode = linkedList.push(70);
+        Node secondNode = linkedList.push(30);
+        Node newNode = linkedList.push(56);
+        System.out.println("Before");
+        linkedList.print();
+        System.out.println("                                      ");
+        linkedList.insertAtSpecificIndex(2, 40);
+        System.out.println("After");
+        linkedList.print();
+        System.out.println(" ");
+        linkedList.size();
+
     }
 }
