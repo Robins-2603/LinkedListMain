@@ -10,6 +10,7 @@ public class LinkedListMain {
         System.out.println("2.To add Data at End");
         System.out.println("3.To insert Data in between two values");
         System.out.println("4. To delete the first element in list");
+        System.out.println("5. To delete the last element in list");
         switch (sc.nextInt()){
 
             case 1:
@@ -23,6 +24,9 @@ public class LinkedListMain {
                 break;
             case 4:
                 Operations.pop();
+                break;
+            case 5:
+                Operations.popLast();
                 break;
         }
     }

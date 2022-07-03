@@ -53,4 +53,20 @@ public class LinkedList {
         head = temp.next;
         temp =null;
     }
+// to delete last element
+    public void popLast(){
+        if (head == null)
+            System.out.println("No elements to delete..");
+        else if (head.next == null)
+            head = null;
+        else {
+            Node temp = head;
+
+            while (temp.next.next != null) {
+                temp = temp.next;
+            }
+
+            temp.next = null;
+        }
+    }
 }

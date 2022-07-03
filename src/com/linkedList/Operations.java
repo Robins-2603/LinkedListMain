@@ -43,4 +43,20 @@ public class Operations {
         linkedList.print();
         System.out.println(" ");
     }
+
+    //method to delete last element
+    public static void popLast(){
+        LinkedList linkedList=new LinkedList();
+        Node firstNode= linkedList.push(70);
+        Node secondNode= linkedList.push(30);
+        Node newNode=linkedList.push(56);
+        System.out.println("Before");
+        linkedList.print();
+        System.out.println(         );
+        linkedList.popLast();
+        System.out.println("After");
+        linkedList.print();
+        System.out.println(" ");
+
+    }
 }
