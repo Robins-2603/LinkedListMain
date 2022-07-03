@@ -9,6 +9,7 @@ public class LinkedListMain {
         System.out.println("1.To add Data at start");
         System.out.println("2.To add Data at End");
         System.out.println("3.To insert Data in between two values");
+        System.out.println("4. To delete the first element in list");
         switch (sc.nextInt()){
 
             case 1:
@@ -19,6 +20,9 @@ public class LinkedListMain {
                 break;
             case 3:
                 Operations.insertInBetween();
+                break;
+            case 4:
+                Operations.pop();
                 break;
         }
     }
