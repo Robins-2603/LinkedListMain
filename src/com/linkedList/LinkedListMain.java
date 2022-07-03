@@ -8,6 +8,7 @@ public class LinkedListMain {
         Scanner sc = new Scanner(System.in);
         System.out.println("1.To add Data at start");
         System.out.println("2.To add Data at End");
+        System.out.println("3.To insert Data in between two values");
         switch (sc.nextInt()){
 
             case 1:
@@ -15,6 +16,9 @@ public class LinkedListMain {
                 break;
             case 2:
                 Operations.addDataAtEnd();
+                break;
+            case 3:
+                Operations.insertInBetween();
                 break;
         }
     }
