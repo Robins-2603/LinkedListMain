@@ -151,4 +151,21 @@ public class LinkedList {
 
         }
     }
+// delete at specific pos
+    public void deleteAtIndexPosition(int data) {
+        Node temp = head;               //56,30,40,70
+        if (head.key == data) {
+            pop();
+        } else if (tail.key == data) {
+            popLast();
+        } else {
+            while (temp != null) {
+                if (temp.next.key == data) {
+                    temp.next = temp.next.next;
+                    break;
+                }
+                temp = temp.next;
+            }
+        }
+    }
 }

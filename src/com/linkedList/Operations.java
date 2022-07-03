@@ -90,4 +90,27 @@ public class Operations {
         linkedList.size();
 
     }
+// delete at specific pos
+    public static void deleteAtIndexPosition(){
+        LinkedList linkedList = new LinkedList();
+        Node firstNode = linkedList.push(70);
+        Node secondNode = linkedList.push(30);
+        Node newNode = linkedList.push(56);
+        System.out.println("Before");
+        linkedList.print();
+        System.out.println("                                      ");
+        linkedList.insertAtSpecificIndex(2, 40);
+        System.out.println("After");
+        linkedList.print();
+        System.out.println(" ");
+        linkedList.size();
+        System.out.println("      ");
+        System.out.println("After Deleting The Value");
+        linkedList.deleteAtIndexPosition(40);
+        linkedList.print();
+        System.out.println(" ");
+        linkedList.size();
+
+
+    }
 }

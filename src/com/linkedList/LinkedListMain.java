@@ -13,6 +13,7 @@ public class LinkedListMain {
         System.out.println("5. To delete the last element in list");
         System.out.println("6. To search the specific element in list");
         System.out.println("7. To insert the data at specific index position");
+        System.out.println("8. To delete the data at specific index position");
         switch (sc.nextInt()){
 
             case 1:
@@ -35,6 +36,9 @@ public class LinkedListMain {
                 break;
             case 7:
                 Operations.insertAtSpecificIndex();
+                break;
+            case 8:
+                Operations.deleteAtIndexPosition();
                 break;
         }
     }
